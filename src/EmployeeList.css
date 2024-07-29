@@ -1,0 +1,172 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  width: 105%;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: white;
+}
+
+.beImage {
+  padding: 10px;
+  margin-left: 17px;
+}
+
+.headerTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerTitle h1 {
+  font-size: 24px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  width: 200px;
+  outline: none;
+}
+
+.search-container button {
+  padding: 0.45vh;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-container svg {
+  fill: #333;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+}
+
+.table td {
+  border-bottom: 1px solid #ccc; 
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .table th:nth-child(3),
+  .table td:nth-child(3),
+  .table th:nth-child(4),
+  .table td:nth-child(4),
+  .table th:nth-child(5),
+  .table td:nth-child(5) {
+    display: none;
+  }
+
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .headerTitle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headerTitle h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .search-container input {
+    width: 70%;
+  }
+
+  .search-container button {
+    width: 25%;
+    padding: 0.45vh;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .table img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .table th, .table td {
+    padding: 5px;
+    align-content: space-between;
+  }
+
+  .expanded-row td {
+    padding: 0;
+    background-color: #fff;
+    text-align: end;
+  }
+
+  .expanded-row div {
+    padding: 10px;
+  }
+
+  .expanded-row div:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+}
